@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org/">
+<body>
+<h2 style="color :red"> Welcome to employee data page </h2>
+<span th:text="${list}"></span>
+<table border="1">
+<tr>
+<th>ID</th>
+<th>NAME</th>
+<th>SALARy</th>
+<th>ADRESS</th>
+</tr>
+
+<tr th:each="ob:${list}">
+<th th:text="${ob.empId}"></th>
+<th th:text="${ob.empName}"></th>
+<th th:text="${ob.empSAl}"></th>
+<th th:text="${ob.empAddr}"></th>
+</tr>
+</table>
+</body>
+</html>

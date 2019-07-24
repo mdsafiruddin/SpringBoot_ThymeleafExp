@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org/">
+<body>
+<h1>Welcome to register page</h1>
+<form action="" method="POST" th:action="@{/save}" th:Object="${employee}">
+
+ID    <input type="text" th:field="*{empId}"/><br>
+NAME  <input type="text" th:field="*{empName}"/><br>
+SALARY<input type="text" th:field="*{empSal}"/><br>
+ADDRESS<input type="text" th:field="*{empAddr}"/><br><br>
+<input type="submit" value="Register"/>
+</form>
+</body>
+</html>
